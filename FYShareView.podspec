@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/wufeiyue/FYShareView.git", :tag => "1.0.1" }
-  s.source_files  = "FYShareView", "FYShareView/FYShareView.swift"
+  s.source_files  = "Classes", "Classes/*"
 
