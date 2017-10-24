@@ -7,12 +7,12 @@
 ![](https://raw.githubusercontent.com/wufeiyue/FYShareView/master/Resources/show.gif)
 ### 使用CocoaPods导入FYShareView
 在`Podfile`中进行如下导入：
-```
+```swift
 pod 'FYShareView'
 ```
 然后使用`cocoaPods`进行安装  
 ### 第二步：遵守FYShareViewDelegate协议，并在初始化方式中指定为自己
-```
+```swift
 
 class ViewController: UIViewController {
 	func setupShareView() {
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
     
     @objc func btnDidTapped() {
-		    //调用展示视图
+		//调用展示视图
         shareView.show()
     }
 }
@@ -42,7 +42,7 @@ extension ViewController: FYShareViewDelegate {
 ### 说明
 ![](https://raw.githubusercontent.com/wufeiyue/FYShareView/master/Resources/specification.png)
 #### 可配置的参数
-```
+```swift
 public struct FYShareStyle {
     var offsetY: CGFloat = 0.0          //相对于顶部的偏移量 默认为0
     var insetHorizontal: CGFloat = 5.0  //水平向中间方向缩进量 默认为5
@@ -56,7 +56,7 @@ public struct FYShareStyle {
 }
 ```
 #### 如何使用
-```
+```swift
 var style = FYShareStyle()
 style.insetHorizontal = 10
 style.cancelHeight = 42
